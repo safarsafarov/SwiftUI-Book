@@ -9,9 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    VStack {
-        Text("Hello World")
+    HStack {
+      VStack {
+        Color(red: 0.5, green: 0.5, blue: 0.5)
+        Text("Match this color")
+      }
+      VStack {
+        Color(red: 0.5, green: 0.5, blue: 0.5)
+        Text("R: 127  G: 127  B: 127")
+      }
     }
+
   }
 }
 

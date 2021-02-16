@@ -5,7 +5,7 @@
 
  # What I am currently learning:
 
- ## Section I: Diving Into SwiftUI
+Section I: Diving Into SwiftUI
 
 - [ ] *Getting Started*
 2.1 Getting started

@@ -1,12 +1,13 @@
+ # SwiftUI By Tutorials by the raywenderlich tutorial team.
  ![alt text](https://github.com/safarsafarov/SwiftUI-Book/blob/master/1.png)
 
  Currently this project will be actively commited, I am going to start everything from the zero but this time with a book. Last time I was only on courses but now I will be on book, of course I will continiue to watch and learn most of the things from the courses.
 
- What I am currently learning:
+ # What I am currently learning:
 
- ### Section I: Diving Into SwiftUI
+ ## Section I: Diving Into SwiftUI
 
-- [ ] Getting Started
+- [ ] *Getting Started*
 2.1 Getting started
 
 
@@ -97,3 +98,7 @@
 
 
 5.8 Key points
+
+
+## Here I will be posting the progress of what I did time to time, it will screenshot:
+![alt text](https://github.com/safarsafarov/SwiftUI-Book/blob/master/2.png)

@@ -5,8 +5,8 @@
  What I am currently learning:
 
  ### Section I: Diving Into SwiftUI
- 
-- [] Getting Started
+
+- [ ] Getting Started
 2.1 Getting started
 2.2 Creating your UI
 2.3 Updating the UI
@@ -16,7 +16,7 @@
 2.7 Key points
 
 
-- [] Understanding SwiftUI
+- [ ] Understanding SwiftUI
 3.1 Getting started
 3.2 Declaring views
 3.3 Declaring data dependencies
@@ -24,7 +24,7 @@
 3.5 Key points
 
 
-- [] Integrating SwiftUI
+- [ ] Integrating SwiftUI
 4.1 Getting started
 4.2 Hosting a SwiftUI view in a UIKit project
 4.3 Hosting a view controller in a SwiftUI project
@@ -34,7 +34,7 @@
 4.7 Where to go from here?
 
 
-- [] The Apple Ecosystem
+- [ ] The Apple Ecosystem
 5.1 Getting started
 5.2 Creating a Swift package
 5.3 Designing for the strengths of each platform

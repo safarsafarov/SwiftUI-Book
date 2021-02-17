@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        let rTarget = Double.random(in: 0..<1)
+        let gTarget = Double.random(in: 0..<1)
+        let bTarget = Double.random(in: 0..<1)
         HStack {
             VStack {
                 Color(red: 0.5, green: 0.5, blue: 0.5)

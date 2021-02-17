@@ -102,10 +102,6 @@
 
 *Section II: Building Blocks of SwiftUI*
 
-## Here I will be posting the progress of what I did time to time, it will screenshot:
-![alt text](https://github.com/safarsafarov/SwiftUI-Book/blob/master/2.png)
-
-
 - [ ] Intro to Controls: Text & Image
 
 
@@ -268,4 +264,176 @@ iteration
 
 
 11.12 Where to go from here?
+
+
+*Section III: Advanced SwiftUI*
+
+
+- [ ] Conditional Views
+
+
+12.1 Displaying a modal sheet
+
+
+12.2 Programmatically dismissing a modal
+
+
+12.3 Creating an alert
+
+
+12.4 Adding an action sheet
+
+
+12.5 Showing a popover
+
+
+12.6 Key points
+
+
+12.7 Where to go from here?
+
+
+
+
+- [ ] Drawing & Custom Graphics
+
+
+13.1 Creating shapes
+
+
+13.2 Using gradients
+
+
+13.3 Rotating shapes
+
+
+13.4 Adding images
+
+
+13.5 Scaling drawings in views
+
+
+13.6 Other shapes
+
+
+13.7 Drawing lines with paths
+
+
+13.8 Drawing dashed lines
+
+
+13.9 Fixing performance problems
+
+
+13.10 Key points
+
+
+13.11 Where to go from here?
+
+
+
+
+- [ ] Animations
+
+
+14.1 Animating state changes
+
+
+14.2 Adding animation
+
+
+14.3 Animation types
+
+
+14.4 Eased animations
+
+
+14.5 Spring animations
+
+
+14.6 Removing and combining animations
+
+
+14.7 Animating from state changes
+
+
+14.8 Adjusting animations
+
+
+14.9 Animating view transitions
+
+
+14.10 Challenge
+
+
+14.11 Key points
+
+
+14.12 Where to go from here?
+
+
+
+
+- [ ] Complex Interfaces
+
+
+15.1 Integrating with other frameworks
+
+
+15.2 Building reusable views
+
+
+15.3 Key points
+
+
+15.4 Challenge
+
+
+
+
+- [ ] Testing & Debugging
+
+
+16.1 Different types of tests
+
+
+16.2 Debugging SwiftUI apps
+
+
+16.3 Adding UI tests
+
+
+16.4 Creating a UI Test
+
+
+16.5 Accessing UI elements
+
+
+16.6 Reading the user interface
+
+
+16.7 Fixing the bug
+
+
+16.8 Adding more complex tests
+
+
+16.9 Simulating user interaction
+
+
+16.10 Testing multiple platforms
+
+
+16.11 Key points
+
+
+16.12 Challenge
+
+
+16.13 Where to go from here?
+
+
+
+## Here I will be posting the progress of what I did time to time, it will screenshot:
+![alt text](https://github.com/safarsafarov/SwiftUI-Book/blob/master/2.png)
 

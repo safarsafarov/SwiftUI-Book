@@ -28,7 +28,7 @@
 
 2.7 Key points
 
-
+<br>
 - [ ] Understanding SwiftUI
 
 
@@ -46,7 +46,7 @@
 
 3.5 Key points
 
-
+<br>
 
 - [ ] Integrating SwiftUI
 
@@ -71,7 +71,7 @@
 
 4.7 Where to go from here?
 
-
+<br>
 
 - [ ] The Apple Ecosystem
 
@@ -99,7 +99,7 @@
 
 5.8 Key points
 
-
+<br>
 *Section II: Building Blocks of SwiftUI*
 
 - [ ] Intro to Controls: Text & Image
@@ -127,7 +127,7 @@
 
 
 6.8 Where to go from here?
-
+<br>
 
 
 - [ ] Controls & User Input
@@ -155,7 +155,7 @@
 
 7.8 Where to go from here?
 
-
+<br>
 - [ ] Introducing Stacks & Containers
 
 8.1 Layout and priorities
@@ -172,7 +172,7 @@
 
 8.5 Where to go from here?
 
-
+<br>
 - [ ] State & Data Flow
 
 9.1 MVC: The Mammoth View Controller
@@ -202,7 +202,7 @@
 9.9 Where to go from here?
 
 
-
+<br>
 - [ ] Gestures
 
 10.1 Adding the learn feature
@@ -222,7 +222,7 @@
 
 10.6 Where to go from here?
 
-
+<br>
 
 - [ ] Lists & Navigation
 
@@ -265,9 +265,8 @@ iteration
 
 11.12 Where to go from here?
 
-
+<br>
 *Section III: Advanced SwiftUI*
-
 
 - [ ] Conditional Views
 
@@ -293,7 +292,7 @@ iteration
 12.7 Where to go from here?
 
 
-
+<br>
 
 - [ ] Drawing & Custom Graphics
 
@@ -331,7 +330,7 @@ iteration
 13.11 Where to go from here?
 
 
-
+<br>
 
 - [ ] Animations
 
@@ -372,7 +371,7 @@ iteration
 14.12 Where to go from here?
 
 
-
+<br>
 
 - [ ] Complex Interfaces
 
@@ -389,7 +388,7 @@ iteration
 15.4 Challenge
 
 
-
+<br>
 
 - [ ] Testing & Debugging
 

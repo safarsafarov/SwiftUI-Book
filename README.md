@@ -29,6 +29,7 @@
 2.7 Key points
 
 <br>
+
 - [ ] Understanding SwiftUI
 
 

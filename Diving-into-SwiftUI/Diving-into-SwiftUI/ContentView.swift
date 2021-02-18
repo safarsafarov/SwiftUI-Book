@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Diving-into-SwiftUI
-//
-//  Created by codestorm on 2021/2/17.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -37,6 +30,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 
 

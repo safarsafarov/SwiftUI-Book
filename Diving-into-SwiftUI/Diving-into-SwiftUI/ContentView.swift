@@ -15,7 +15,11 @@ struct ContentView: View {
     let gTarget = Double.random(in: 0..<1)
     let bTarget = Double.random(in: 0..<1)
     
+    @Binding var value: Double
+    var textColor: Color
+
     var body: some View {
+        
         VStack {
             HStack {
                 VStack {
@@ -27,14 +31,9 @@ struct ContentView: View {
                     Text("R: 127  G: 127  B: 127")
                 }
             }
-            HStack {
-                Text("0")
-                    .foregroundColor(.red)
-                Slider(value: $rGuess)
-                Text("255")
-                    .foregroundColor(.red)
-            }
-            .padding(.horizontal)
+            ColorSlider(value: $rGuess, textColor: .red)
+            ColorSlider(value: $rGuess, textColor: .red)
+            ColorSlider(value: $rGuess, textColor: .red)
         }
     }
 }
@@ -43,7 +42,22 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(rGuess: 0.5, gGuess: 0.5, bGuess: 0.5)
+        ContentView(rGuess: 0.7, gGuess: 0.3, bGuess: 0.6)
             .previewLayout(.fixed(width: 568, height: 320))
+    }
+}
+
+struct ColorSlider: View {
+    @Binding var value: Double
+    var textColor: Color
+    var body: some View {
+        HStack {
+            Text("0")
+              .foregroundColor(textColor)
+            Slider(value: $value)
+            Text("255")
+              .foregroundColor(textColor)
+        }
+        .padding(.horizontal)
     }
 }

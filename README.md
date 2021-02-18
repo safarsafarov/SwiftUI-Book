@@ -7,7 +7,7 @@
 
 *Section I: Diving Into SwiftUI*
 
-- [ ] *Getting Started*
+- [x] *Getting Started*
 2.1 Getting started
 
 

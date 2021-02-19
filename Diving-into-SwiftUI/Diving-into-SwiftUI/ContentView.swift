@@ -27,12 +27,14 @@ struct ContentView: View {
                     VStack {
                         Color(red: rTarget, green: gTarget, blue: bTarget)
                         Text("Match this color")
+                            .fontWeight(.semibold)
                     }
                     VStack {
                         Color(red: rGuess, green: gGuess, blue: bGuess)
                         Text("R: \(Int(rGuess * 255.0))"
                                 + "  G: \(Int(gGuess * 255.0))"
                                 + "  B: \(Int(bGuess * 255.0))")
+                            .fontWeight(.semibold)
                     }
                 }
                 
@@ -49,7 +51,10 @@ struct ContentView: View {
                 ColorSlider(value: $gGuess, textColor: .green)
                 ColorSlider(value: $bGuess, textColor: .blue)
             }
+            .font(Font.subheadline.lowercaseSmallCaps().weight(.light))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .colorScheme(.dark)
     }
 }
 

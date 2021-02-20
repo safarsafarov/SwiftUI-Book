@@ -39,6 +39,10 @@ struct ContentView: View {
                 }
                 
                 Button(action: { self.showAlert = true }) {
+                    self.showAlert ? Text("R: \(Int(rTarget * 255.0))"
+                      + "  G: \(Int(gTarget * 255.0))"
+                      + "  B: \(Int(bTarget * 255.0))")
+                      : Text("Match this color")
                     Text("Hit Me!")
                 }
                 .alert(isPresented: $showAlert) {

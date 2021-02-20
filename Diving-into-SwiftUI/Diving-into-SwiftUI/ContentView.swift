@@ -25,7 +25,10 @@ struct ContentView: View {
             VStack {
                 HStack {
                     VStack {
-                        Color(red: rTarget, green: gTarget, blue: bTarget)
+                        ZStack {
+                            Text("60")
+                            Color(red: rTarget, green: gTarget, blue: bTarget)
+                        }
                         Text("Match this color")
                             .fontWeight(.semibold)
                     }
@@ -58,7 +61,7 @@ struct ContentView: View {
             .font(Font.subheadline.lowercaseSmallCaps().weight(.light))
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .colorScheme(.dark)
+//        .colorScheme(.dark)
     }
 }
 

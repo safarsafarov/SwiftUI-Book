@@ -51,7 +51,6 @@ struct ContentView: View {
                 ColorSlider(value: $gGuess, textColor: .green)
                 ColorSlider(value: $bGuess, textColor: .blue)
             }
-            .padding(.horizontal)
             .font(Font.subheadline.lowercaseSmallCaps().weight(.light))
         }
         .navigationViewStyle(StackNavigationViewStyle())
@@ -75,6 +74,8 @@ struct ColorSlider: View {
             Text("0")
                 .foregroundColor(textColor)
             Slider(value: $value)
+                .background(textColor)
+                .cornerRadius(10)
             Text("255")
                 .foregroundColor(textColor)
         }

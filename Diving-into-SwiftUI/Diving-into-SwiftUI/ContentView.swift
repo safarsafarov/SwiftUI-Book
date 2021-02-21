@@ -1,4 +1,6 @@
 import SwiftUI
+import Combine
+
 struct ContentView: View {
     let rTarget = Double.random(in: 0..<1)
     let gTarget = Double.random(in: 0..<1)
@@ -27,9 +29,10 @@ struct ContentView: View {
                     VStack {
                         ZStack(alignment: .center) {
                             Text("60")
-                                .padding(.all, 5)
+                                 .padding(.all, 5)
                                  .background(Color.white)
                                  .mask(Circle())
+                                 .foregroundColor(.black)
                             Color(red: rTarget, green: gTarget, blue: bTarget)
                         }
                         Text("Match this color")
@@ -91,4 +94,13 @@ struct ColorSlider: View {
         }
         .padding(.horizontal)
     }
+}
+
+class TimeCounter: ObservableObject {
+  var timer: Timer?
+  @Published var counter = 0
+
+  @objc func updateCounter() {
+    counter += 1
+  }
 }

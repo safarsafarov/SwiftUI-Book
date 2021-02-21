@@ -6,15 +6,26 @@
 //
 
 import SwiftUI
+import Combine
 
-struct TimeCounter: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct TimeCounter_Previews: PreviewProvider {
-    static var previews: some View {
-        TimeCounter()
+class TimeCounter: ObservableObject {
+  var timer: Timer?
+  @Published var counter = 0
+
+  @objc func updateCounter() {
+    counter += 1
+  }
+    
+    init() {
+      timer = Timer.scheduledTimer(timeInterval:1, target: self,
+        selector:#selector(updateCounter), userInfo: nil,
+        repeats: true)
     }
+
+    func killTimer() {
+      timer?.invalidate()
+      timer = nil
+    }
+
 }

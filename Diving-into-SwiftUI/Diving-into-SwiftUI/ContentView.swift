@@ -1,6 +1,4 @@
 import SwiftUI
-import Combine
-
 struct ContentView: View {
     let rTarget = Double.random(in: 0..<1)
     let gTarget = Double.random(in: 0..<1)
@@ -8,6 +6,7 @@ struct ContentView: View {
     @State var rGuess: Double
     @State var gGuess: Double
     @State var bGuess: Double
+    @ObservedObject var timer = TimeCounter()
     
     @State var showAlert = false
     
@@ -28,11 +27,11 @@ struct ContentView: View {
                 HStack {
                     VStack {
                         ZStack(alignment: .center) {
-                            Text("60")
-                                 .padding(.all, 5)
-                                 .background(Color.white)
-                                 .mask(Circle())
-                                 .foregroundColor(.black)
+                            Text(String(timer.counter))
+                                .padding(.all, 5)
+                                .background(Color.white)
+                                .mask(Circle())
+                                .foregroundColor(.black)
                             Color(red: rTarget, green: gTarget, blue: bTarget)
                         }
                         Text("Match this color")
@@ -47,11 +46,11 @@ struct ContentView: View {
                     }
                 }
                 
-                Button(action: { self.showAlert = true }) {
+                Button(action:  {self.timer.killTimer() }) {
                     self.showAlert ? Text("R: \(Int(rTarget * 255.0))"
-                      + "  G: \(Int(gTarget * 255.0))"
-                      + "  B: \(Int(bTarget * 255.0))")
-                      : Text("Match this color")
+                                            + "  G: \(Int(gTarget * 255.0))"
+                                            + "  B: \(Int(bTarget * 255.0))")
+                        : Text("Match this color")
                     Text("Hit Me!")
                 }
                 .alert(isPresented: $showAlert) {
@@ -67,7 +66,7 @@ struct ContentView: View {
             .font(Font.subheadline.lowercaseSmallCaps().weight(.light))
         }
         .navigationViewStyle(StackNavigationViewStyle())
-//        .colorScheme(.dark)
+        //        .colorScheme(.dark)
     }
 }
 
@@ -96,11 +95,3 @@ struct ColorSlider: View {
     }
 }
 
-class TimeCounter: ObservableObject {
-  var timer: Timer?
-  @Published var counter = 0
-
-  @objc func updateCounter() {
-    counter += 1
-  }
-}

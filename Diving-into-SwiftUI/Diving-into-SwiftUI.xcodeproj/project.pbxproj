@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F617867825E97F21000F2FBB /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617867725E97F21000F2FBB /* TimeCounter.swift */; };
 		F6DFEC1D25DD5D78001C1A8C /* Diving_into_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DFEC1C25DD5D78001C1A8C /* Diving_into_SwiftUIApp.swift */; };
 		F6DFEC1F25DD5D78001C1A8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DFEC1E25DD5D78001C1A8C /* ContentView.swift */; };
 		F6DFEC2125DD5D7A001C1A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DFEC2025DD5D7A001C1A8C /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F617867725E97F21000F2FBB /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		F6DFEC1925DD5D78001C1A8C /* Diving-into-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diving-into-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DFEC1C25DD5D78001C1A8C /* Diving_into_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving_into_SwiftUIApp.swift; sourceTree = "<group>"; };
 		F6DFEC1E25DD5D78001C1A8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				F6DFEC2025DD5D7A001C1A8C /* Assets.xcassets */,
 				F6DFEC2525DD5D7A001C1A8C /* Info.plist */,
 				F6DFEC2225DD5D7A001C1A8C /* Preview Content */,
+				F617867725E97F21000F2FBB /* TimeCounter.swift */,
 			);
 			path = "Diving-into-SwiftUI";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F617867825E97F21000F2FBB /* TimeCounter.swift in Sources */,
 				F6DFEC1F25DD5D78001C1A8C /* ContentView.swift in Sources */,
 				F6DFEC1D25DD5D78001C1A8C /* Diving_into_SwiftUIApp.swift in Sources */,
 			);

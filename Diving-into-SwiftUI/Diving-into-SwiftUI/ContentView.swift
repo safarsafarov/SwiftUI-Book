@@ -25,8 +25,11 @@ struct ContentView: View {
             VStack {
                 HStack {
                     VStack {
-                        ZStack {
+                        ZStack(alignment: .center) {
                             Text("60")
+                                .padding(.all, 5)
+                                 .background(Color.white)
+                                 .mask(Circle())
                             Color(red: rTarget, green: gTarget, blue: bTarget)
                         }
                         Text("Match this color")

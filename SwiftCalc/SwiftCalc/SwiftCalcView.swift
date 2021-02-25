@@ -30,7 +30,7 @@ struct CalcButtonStyle: ButtonStyle {
           ),
           center: .center,
           startRadius: 0,
-          endRadius: 80
+          endRadius: 80l
         )
       )
   }

@@ -4,7 +4,20 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             Image("welcome-background", bundle: nil)
-                .blur(radius: 5.0)
+                // 2
+                 .resizable()
+                 // 3
+                 .scaledToFit()
+                 // 4
+                 .aspectRatio(1 / 1, contentMode: .fill)
+                 // 5
+                 .edgesIgnoringSafeArea(.all)
+                 // 6
+                 .saturation(0.5)
+                 // 7
+                 .blur(radius: 5)
+                 // 8
+                 .opacity(0.08)
             HStack{
                 Image(systemName: "table")
                     .resizable()

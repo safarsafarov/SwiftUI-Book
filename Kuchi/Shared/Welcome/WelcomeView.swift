@@ -27,12 +27,19 @@ struct WelcomeView: View {
                     .clipShape(Circle())
                     .foregroundColor(.red)
                 
-                Text("Welcome to Kuchi")
-                    .font(.system(size: 30))
+                VStack(alignment: .leading) {
+                  Text("Welcome to")
+                    .font(.headline)
                     .bold()
-                    .foregroundColor(.red)
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
+                  Text("Kuchi")
+                    .font(.largeTitle)
+                    .bold()
+                }
+                .foregroundColor(.red)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal)
+
                 
             }
         }

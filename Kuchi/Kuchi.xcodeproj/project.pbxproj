@@ -23,6 +23,7 @@
 		F6ED111325F2D9AC00AF81DC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111225F2D9AC00AF81DC /* UserManager.swift */; };
 		F6ED111725F2D9B800AF81DC /* KeyboardFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111625F2D9B800AF81DC /* KeyboardFollower.swift */; };
 		F6ED111B25F2DA1000AF81DC /* WelcomeBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */; };
+		F6ED111F25F2DA5200AF81DC /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111E25F2DA5200AF81DC /* LogoImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F6ED111225F2D9AC00AF81DC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		F6ED111625F2D9B800AF81DC /* KeyboardFollower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFollower.swift; sourceTree = "<group>"; };
 		F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackgroundImage.swift; sourceTree = "<group>"; };
+		F6ED111E25F2DA5200AF81DC /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 			children = (
 				57578F9224E9D943003465A4 /* Components */,
 				F647003D25EDC48F00DE98DC /* WelcomeView.swift */,
-				F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -75,6 +76,8 @@
 		57578F9224E9D943003465A4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */,
+				F6ED111E25F2DA5200AF81DC /* LogoImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				F6ED111325F2D9AC00AF81DC /* UserManager.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
 				F6ED110B25F2D99400AF81DC /* Profile.swift in Sources */,
+				F6ED111F25F2DA5200AF81DC /* LogoImage.swift in Sources */,
 				F647003E25EDC48F00DE98DC /* WelcomeView.swift in Sources */,
 				F6ED111725F2D9B800AF81DC /* KeyboardFollower.swift in Sources */,
 				57578FDE24E9D943003465A4 /* HomeView.swift in Sources */,

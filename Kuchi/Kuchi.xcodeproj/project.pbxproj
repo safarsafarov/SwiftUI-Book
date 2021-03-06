@@ -18,6 +18,8 @@
 		57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF340024E89F91004ABEB2 /* KuchiApp.swift */; };
 		57EF341424E89F92004ABEB2 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF340024E89F91004ABEB2 /* KuchiApp.swift */; };
 		F647003E25EDC48F00DE98DC /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F647003D25EDC48F00DE98DC /* WelcomeView.swift */; };
+		F6E04AD725F670860066AC29 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E04AD625F670860066AC29 /* WelcomeMessageView.swift */; };
+		F6E04ADB25F670D10066AC29 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E04ADA25F670D10066AC29 /* RegisterView.swift */; };
 		F6ED110B25F2D99400AF81DC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED110A25F2D99400AF81DC /* Profile.swift */; };
 		F6ED110F25F2D9A100AF81DC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED110E25F2D9A100AF81DC /* Settings.swift */; };
 		F6ED111325F2D9AC00AF81DC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111225F2D9AC00AF81DC /* UserManager.swift */; };
@@ -38,6 +40,8 @@
 		57EF341124E89F92004ABEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EF341224E89F92004ABEB2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F647003D25EDC48F00DE98DC /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F6E04AD625F670860066AC29 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
+		F6E04ADA25F670D10066AC29 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F6ED110A25F2D99400AF81DC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F6ED110E25F2D9A100AF81DC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F6ED111225F2D9AC00AF81DC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			children = (
 				57578F9224E9D943003465A4 /* Components */,
 				F647003D25EDC48F00DE98DC /* WelcomeView.swift */,
+				F6E04ADA25F670D10066AC29 /* RegisterView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				F6ED110A25F2D99400AF81DC /* Profile.swift */,
 				F6ED110E25F2D9A100AF81DC /* Settings.swift */,
 				F6ED111225F2D9AC00AF81DC /* UserManager.swift */,
+				F6E04AD625F670860066AC29 /* WelcomeMessageView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -276,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E04ADB25F670D10066AC29 /* RegisterView.swift in Sources */,
 				F6ED111325F2D9AC00AF81DC /* UserManager.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
 				F6ED110B25F2D99400AF81DC /* Profile.swift in Sources */,
+				F6E04AD725F670860066AC29 /* WelcomeMessageView.swift in Sources */,
 				F6ED111F25F2DA5200AF81DC /* LogoImage.swift in Sources */,
 				F647003E25EDC48F00DE98DC /* WelcomeView.swift in Sources */,
 				F6ED111725F2D9B800AF81DC /* KeyboardFollower.swift in Sources */,

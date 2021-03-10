@@ -1,5 +1,13 @@
 import SwiftUI
 
+struct KuchiTextStyle: TextFieldStyle {
+  public func _body(
+    configuration: TextField<Self._Label>) -> some View {
+      return configuration
+  }
+}
+
+
 struct RegisterView: View {
     
     @State var name: String = ""
@@ -21,6 +29,7 @@ struct RegisterView: View {
                         radius: 3, x: 1, y: 2)
             Spacer()
         }
+        .padding()
         .background(WelcomeBackgroundImage())
     }
 }

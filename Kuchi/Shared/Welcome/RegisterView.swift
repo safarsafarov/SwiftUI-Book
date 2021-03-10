@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @State var name: String = ""
     var body: some View {
         ZStack {
           WelcomeBackgroundImage()

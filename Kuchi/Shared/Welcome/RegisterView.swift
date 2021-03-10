@@ -7,6 +7,7 @@ struct RegisterView: View {
           WelcomeBackgroundImage()
           VStack {
             WelcomeMessageView()
+            TextField("Type your name...", text: $name)
           }
         }
     }

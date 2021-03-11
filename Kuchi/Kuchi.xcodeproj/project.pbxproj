@@ -26,6 +26,7 @@
 		F6ED111725F2D9B800AF81DC /* KeyboardFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111625F2D9B800AF81DC /* KeyboardFollower.swift */; };
 		F6ED111B25F2DA1000AF81DC /* WelcomeBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */; };
 		F6ED111F25F2DA5200AF81DC /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED111E25F2DA5200AF81DC /* LogoImage.swift */; };
+		F6F7B3A625FBA1AD0055996E /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7B3A525FBA1AD0055996E /* BorderedViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F6ED111625F2D9B800AF81DC /* KeyboardFollower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFollower.swift; sourceTree = "<group>"; };
 		F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackgroundImage.swift; sourceTree = "<group>"; };
 		F6ED111E25F2DA5200AF81DC /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
+		F6F7B3A525FBA1AD0055996E /* BorderedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				F6ED111A25F2DA1000AF81DC /* WelcomeBackgroundImage.swift */,
 				F6ED111E25F2DA5200AF81DC /* LogoImage.swift */,
+				F6F7B3A525FBA1AD0055996E /* BorderedViewModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				F6E04ADB25F670D10066AC29 /* RegisterView.swift in Sources */,
 				F6ED111325F2D9AC00AF81DC /* UserManager.swift in Sources */,
+				F6F7B3A625FBA1AD0055996E /* BorderedViewModifier.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
 				F6ED110B25F2D99400AF81DC /* Profile.swift in Sources */,
 				F6E04AD725F670860066AC29 /* WelcomeMessageView.swift in Sources */,

@@ -29,7 +29,10 @@ struct RegisterView: View {
 
         WelcomeMessageView()
         
-        TextField("Type your name...", text: $name)
+        ModifiedContent(
+          content: TextField("Type your name...", text: $name),
+          modifier: BorderedViewModifier()
+        )
 
         Spacer()
       }

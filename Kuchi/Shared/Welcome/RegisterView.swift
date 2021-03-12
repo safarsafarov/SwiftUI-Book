@@ -26,6 +26,7 @@ struct RegisterView: View {
                 .bordered()
             Spacer()
         }
+        
         .padding()
         .background(WelcomeBackgroundImage())
     }

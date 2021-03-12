@@ -1,12 +1,9 @@
-
 import SwiftUI
 
 struct WelcomeMessageView: View {
     var body: some View {
         HStack{
             HStack{
-                
-                //                LogoImage()
                 VStack(alignment: .leading) {
                     Text("Welcome to")
                         .font(.headline)
@@ -20,8 +17,6 @@ struct WelcomeMessageView: View {
             .lineLimit(2)
             .multilineTextAlignment(.leading)
             .padding(.horizontal)
-            
-            
         }
     }
 }

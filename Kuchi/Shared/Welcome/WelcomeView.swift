@@ -14,7 +14,3 @@ struct WelcomeView_Previews: PreviewProvider {
         WelcomeView()
     }
 }
-
-
-
-

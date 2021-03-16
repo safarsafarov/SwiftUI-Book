@@ -89,7 +89,7 @@ _Section II: Building Blocks of SwiftUI_
 
   6.8 Where to go from here?
 
-- [ ] Controls & User Input
+- [x] Controls & User Input
 
   7.1 A simple registration form
 

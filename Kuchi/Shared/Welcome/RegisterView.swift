@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct KuchiTextStyle: TextFieldStyle {
+    
     public func _body(
         configuration: TextField<Self._Label>) -> some View {
         

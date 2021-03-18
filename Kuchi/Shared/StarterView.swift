@@ -30,20 +30,30 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-/// Profile of the learner using the app.
-struct Profile : Codable {
-  /// (Selected) name) of the learner.
-  var name: String
+import SwiftUI
+
+struct StarterView: View {
+  @EnvironmentObject var userViewModel: UserManager
   
-  /// Initializes a new `Profile` with an empty `name`.
-  init() {
-    self.name = ""
+  @ViewBuilder
+  var body: some View {
+    if self.userViewModel.isRegistered {
+      WelcomeView()
+    } else {
+      #if os(iOS)
+      RegisterView(keyboardHandler: KeyboardFollower())
+      #endif
+      
+      #if os(macOS)
+      RegisterView()
+      #endif
+    }
   }
-  
-  /// Initializes a new `Profile` with a specified name.
-  ///  - Parameters:
-  ///     - name Name of the user profile.
-  init(named name: String) {
-    self.name = name
+}
+
+struct StarterView_Previews: PreviewProvider {
+  static var previews: some View {
+    StarterView()
+      .environmentObject(UserManager())
   }
 }

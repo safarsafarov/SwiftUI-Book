@@ -32,85 +32,94 @@
 
 import SwiftUI
 
-struct RegisterView: View {
-  @EnvironmentObject var userManager: UserManager
-  @ObservedObject var keyboardHandler: KeyboardFollower
+struct History: Hashable {
+  let date: Date
+  let challenge: Challenge
   
-  init(keyboardHandler: KeyboardFollower) {
-    self.keyboardHandler = keyboardHandler
+  static func random() -> History {
+    let date = Date.init(timeIntervalSinceNow: -TimeInterval.random(in: 0...1000000))
+    
+    let challenge = ChallengesViewModel.challenges.randomElement()!
+    
+    return History(
+      date: date,
+      challenge: challenge
+    )
+  }
+  
+  static func random(count: Int) -> [History] {
+    return (0 ..< count)
+      .map({ _ in self.random() })
+      .sorted(by: { $0.date < $1.date })
+  }
+}
+
+struct HistoryView: View {
+  let history = History.random(count: 2000)
+  let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    formatter.timeStyle = .short
+    return formatter
+  }()
+  
+  var header: some View {
+    Text("History")
+      .foregroundColor(.white)
+      .font(.title)
+      .frame(width: UIScreen.main.bounds.width, height: 50)
+      .background(Color.gray)
+  }
+  
+  func getElement(_ element: History) -> some View {
+    VStack(alignment: .center) {
+      Text("\(dateFormatter.string(from: element.date))")
+        .font(.caption2)
+        .foregroundColor(.blue)
+      HStack {
+        VStack {
+          Text("Question:")
+            .font(.caption)
+            .foregroundColor(.gray)
+          Text(element.challenge.question)
+            .font(.body)
+        }
+        
+        VStack {
+          Text("Answer:")
+            .font(.caption)
+            .foregroundColor(.gray)
+          Text(element.challenge.answer)
+            .font(.body)
+        }
+        
+        VStack {
+          Text("Guessed")
+            .font(.caption)
+            .foregroundColor(.gray)
+          Text(element.challenge.succeeded ? "yes" : "no")
+        }
+      }
+    }
+    .padding()
+    .frame(width: UIScreen.main.bounds.width)
   }
   
   var body: some View {
-    VStack {
-      Spacer()
-      
-      WelcomeMessageView()
-      
-      TextField("Type your name...", text: $userManager.profile.name)
-        .bordered()
-      
-      HStack {
-        Spacer()
-        Text("\(userManager.profile.name.count)")
-          .font(.caption)
-          .foregroundColor(
-            userManager.isUserNameValid() ? .green : .red)
-          .padding(.trailing)
-      }
-      .padding(.bottom)
-      
-      HStack {
-        Spacer()
-        
-        Toggle(isOn: $userManager.settings.rememberUser) {
-          Text("Remember me")
-            .font(.subheadline)
-            .foregroundColor(.gray)
-        }
-        .fixedSize()
-      }
-      
-      Button(action: self.registerUser) {
-        HStack {
-          Image(systemName: "checkmark")
-            .resizable()
-            .frame(width: 16, height: 16, alignment: .center)
-          Text("OK")
-            .font(.body)
-            .bold()
+    ScrollView {
+      LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
+        Section(header: header) {
+          ForEach(history, id: \.self) { element in
+            getElement(element)
+          }
         }
       }
-      .bordered()
-      .disabled(!userManager.isUserNameValid())
-      
-      Spacer()
     }
-    .padding(.bottom, keyboardHandler.keyboardHeight)
-    .edgesIgnoringSafeArea(keyboardHandler.isVisible ? .bottom : [])
-    .padding()
-    .background(WelcomeBackgroundImage())
   }
 }
 
-// MARK: - Event Handlers
-extension RegisterView {
-  func registerUser() {
-    if userManager.settings.rememberUser {
-      userManager.persistProfile()
-    } else {
-      userManager.clear()
-    }
-    
-    userManager.persistSettings()
-    userManager.setRegistered()
-  }
-}
-
-struct RegisterView_Previews: PreviewProvider {
-  static let user = UserManager(name: "Ray")
-  
+struct HistoryView_Previews: PreviewProvider {
   static var previews: some View {
-    RegisterView(keyboardHandler: KeyboardFollower())
-      .environmentObject(user)
+    HistoryView()
   }
 }

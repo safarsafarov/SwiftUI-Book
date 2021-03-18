@@ -30,20 +30,20 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-/// Profile of the learner using the app.
-struct Profile : Codable {
-  /// (Selected) name) of the learner.
-  var name: String
+import SwiftUI
+
+/// Displays the choice available for the practice question.
+struct ChoicesRow : View {
+  var choice: String
   
-  /// Initializes a new `Profile` with an empty `name`.
-  init() {
-    self.name = ""
+  var body: some View {
+    Text(choice)
+      .font(.largeTitle)
   }
-  
-  /// Initializes a new `Profile` with a specified name.
-  ///  - Parameters:
-  ///     - name Name of the user profile.
-  init(named name: String) {
-    self.name = name
+}
+
+struct ChoicesRow_Previews : PreviewProvider {
+  static var previews: some View {
+    ChoicesRow(choice: "Hello")
   }
 }

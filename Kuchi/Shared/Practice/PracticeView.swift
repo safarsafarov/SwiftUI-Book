@@ -30,20 +30,34 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-/// Profile of the learner using the app.
-struct Profile : Codable {
-  /// (Selected) name) of the learner.
-  var name: String
+import SwiftUI
+
+/// Displays the practice view with question and potential answers (choices).
+struct PracticeView : View {
+  @Binding var challengeTest: ChallengeTest?
+  @Binding var userName: String
   
-  /// Initializes a new `Profile` with an empty `name`.
-  init() {
-    self.name = ""
+  @ViewBuilder
+  var body: some View {
+    if challengeTest != nil {
+      ChallengeView(challengeTest: challengeTest!)
+    } else {
+      CongratulationsView(userName: userName)
+    }
   }
+}
+
+struct PracticeView_Previews : PreviewProvider {
+  @State static var numberOfAnswered: Int = 0
+  static let challengeTest = ChallengeTest(
+    challenge: Challenge(question: "おねがい　します", pronunciation: "Onegai shimasu", answer: "Please"),
+    answers: ["Thank you", "Hello", "Goodbye"]
+  )
   
-  /// Initializes a new `Profile` with a specified name.
-  ///  - Parameters:
-  ///     - name Name of the user profile.
-  init(named name: String) {
-    self.name = name
+  static var previews: some View {
+    return PracticeView(
+      challengeTest: .constant(challengeTest),
+      userName: .constant("Johnny Swift")
+    )
   }
 }

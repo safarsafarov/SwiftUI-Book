@@ -1,3 +1,5 @@
+
+
 import SwiftUI
 
 struct WelcomeView: View {
@@ -38,6 +40,6 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
   static var previews: some View {
     WelcomeView()
-      .environmentObject(UserManager())
+      .environmentObject(userManager())
   }
 }

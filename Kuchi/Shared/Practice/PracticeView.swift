@@ -1,4 +1,4 @@
-import SwiftUI
+  import SwiftUI
 
 /// Displays the practice view with question and potential answers (choices).
 struct PracticeView : View {

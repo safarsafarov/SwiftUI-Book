@@ -14,8 +14,10 @@ struct ContentView: View {
                 .background(Color.red)
             Text("A great and warm welcome to Kuchi")
                 .background(Color.red)
-                .frame(width: 150, height: 50, alignment: .center)
+                .frame(width: 300, height: 100, alignment: .center)
                 .background(Color.yellow)
+                .minimumScaleFactor(0.5)
+            
         }
         
     }

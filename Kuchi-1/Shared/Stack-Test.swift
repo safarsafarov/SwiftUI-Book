@@ -8,6 +8,9 @@ struct Stack_Test: View {
                 .frame(width: 100, height: 50, alignment: .center)
                 .minimumScaleFactor(0.5)
                 .background(Color.yellow)
+            Image("Welcome-kbacground")
+                .resizable()
+
         }
     }
 }

@@ -4,6 +4,7 @@ struct Stack_Test: View {
     var body: some View {
         HStack {
           Text("A great and warm welcome to Kuchi")
+            .layoutPriority(-1)
             .background(Color.red)
 
           Text("A great and warm welcome to Kuchi")
@@ -13,6 +14,7 @@ struct Stack_Test: View {
           Text("A great and warm welcome to Kuchi")
             .background(Color.red)
         }
+
 
     }
 }

@@ -3,9 +3,10 @@ import SwiftUI
 struct ScoreView: View {
     var numberOfAnswered = 0
     var numberOfQuestions = 5
-    struct State{
-        var numberOfAnswered = 0
+    class State {
+      var numberOfAnswered = 0
     }
+
     var state = State()
     var body: some View {
       // 1
@@ -15,7 +16,7 @@ struct ScoreView: View {
       }) {
         // 3
         HStack {
-          Text("\(numberOfAnswered)/\(numberOfQuestions)")
+            Text("\(state.numberOfAnswered)/\(numberOfQuestions)")
             .font(.caption)
             .padding(4)
           Spacer()

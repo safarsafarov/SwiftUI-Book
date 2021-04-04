@@ -8,18 +8,21 @@ struct ScoreView: View {
     
     
     var body: some View {
+        // 1
         Button(action: {
-            self._numberOfAnswered.wrappedValue += 1
-            print("Answered: \(self._numberOfAnswered.wrappedValue)")
+            // 2
+            self.numberOfAnswered += 1
         }) {
+            // 3
             HStack {
-                Text("\(_numberOfAnswered.wrappedValue)/\(numberOfQuestions)")
+                Text("\(numberOfAnswered)/\(numberOfQuestions)")
                     .font(.caption)
                     .padding(4)
                 Spacer()
             }
         }
     }
+    
 }
 
 

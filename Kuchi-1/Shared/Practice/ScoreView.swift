@@ -5,9 +5,14 @@ struct ScoreView: View {
     
     @State
     var numberOfAnswered = 0
-    
+    class Box<T> {
+      var wrappedValue: T
+      init(initialValue value: T) { self.wrappedValue = value }
+    }
+
     
     var body: some View {
+        
         // 1
         Button(action: {
             // 2

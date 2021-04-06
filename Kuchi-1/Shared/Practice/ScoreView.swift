@@ -8,6 +8,10 @@ struct ScoreView: View {
     class Box<T> {
       var wrappedValue: T
       init(initialValue value: T) { self.wrappedValue = value }
+        struct State {
+          var numberOfAnswered = Box<Int>(initialValue: 0)
+        }
+
     }
 
     

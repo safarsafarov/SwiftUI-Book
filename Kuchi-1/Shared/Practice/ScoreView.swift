@@ -1,7 +1,5 @@
 import SwiftUI
-struct State {
-  var numberOfAnswered = Box<Int>(initialValue: 0)
-}
+
 struct ScoreView: View {
     var numberOfQuestions = 5
     

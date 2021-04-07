@@ -6,14 +6,13 @@ struct ScoreView: View {
     @State
     var numberOfAnswered = 0
     class Box<T> {
-      var wrappedValue: T
-      init(initialValue value: T) { self.wrappedValue = value }
+        var wrappedValue: T
+        init(initialValue value: T) { self.wrappedValue = value }
         struct State {
-          var numberOfAnswered = Box<Int>(initialValue: 0)
+            var numberOfAnswered = Box<Int>(initialValue: 0)
         }
-
     }
-
+    
     
     var body: some View {
         

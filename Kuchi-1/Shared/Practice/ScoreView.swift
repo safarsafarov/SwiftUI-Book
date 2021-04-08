@@ -3,35 +3,23 @@ import SwiftUI
 struct ScoreView: View {
     var numberOfQuestions = 5
     
-    @State
-    var numberOfAnswered = 0
-    class Box<T> {
-        var wrappedValue: T
-        init(initialValue value: T) { self.wrappedValue = value }
-        struct State {
-            var numberOfAnswered = Box<Int>(initialValue: 0)
-        }
-    }
-    
+    var _numberOfAnswered = State<Int>(initialValue: 0)
     
     var body: some View {
-        
-        // 1
         Button(action: {
-            // 2
-            self.state.numberOfAnswered.wrappedValue += 1
+            self._numberOfAnswered.wrappedValue += 1
+            print("Answered: \(self._numberOfAnswered.wrappedValue)")
         }) {
-            // 3
             HStack {
-                Text("\(numberOfAnswered)/\(numberOfQuestions)")
+                Text("\(_numberOfAnswered.wrappedValue)/\(numberOfQuestions)")
                     .font(.caption)
                     .padding(4)
                 Spacer()
             }
         }
     }
-    
 }
+
 
 
 struct ScoreView_Previews: PreviewProvider {

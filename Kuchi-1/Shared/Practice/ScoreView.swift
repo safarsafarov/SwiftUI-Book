@@ -19,7 +19,7 @@ struct ScoreView: View {
         // 1
         Button(action: {
             // 2
-            self.numberOfAnswered += 1
+            self.state.numberOfAnswered.wrappedValue += 1
         }) {
             // 3
             HStack {
